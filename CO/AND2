@@ -1,55 +1,57 @@
-#! /data/data/com.termux/files/usr/bin/vvp
-:ivl_version "10.3 (stable)";
+#! /usr/bin/vvp
+:ivl_version "10.1 (stable)";
 :ivl_delay_selection "TYPICAL";
 :vpi_time_precision + 0;
 :vpi_module "system";
 :vpi_module "vhdl_sys";
 :vpi_module "v2005_math";
 :vpi_module "va_math";
-S_0x7f77c5c180 .scope module, "AND_Test" "AND_Test" 2 4;
+S_0x6bc810 .scope module, "AND2_Test" "AND2_Test" 2 4;
  .timescale 1 0;
-v0x7f77c40320_0 .net "Out", 0 0, L_0x7f77c841c0;  1 drivers
-v0x7f77c403c0_0 .var "in1", 0 0;
-v0x7f77c40460_0 .var "in2", 0 0;
-S_0x7f77c5c300 .scope module, "iAND2" "AND2" 2 11, 3 1 0, S_0x7f77c5c180;
+v0x6dd900_0 .net "Out", 0 0, L_0x6bc480;  1 drivers
+v0x6dd9d0_0 .var "in1", 0 0;
+v0x6ddaa0_0 .var "in2", 0 0;
+S_0x6bc990 .scope module, "uut" "AND2" 2 13, 3 1 0, S_0x6bc810;
  .timescale 1 0;
     .port_info 0 /INPUT 1 "in1"
     .port_info 1 /INPUT 1 "in2"
     .port_info 2 /OUTPUT 1 "Out"
-L_0x7f77c841c0 .functor AND 1, v0x7f77c403c0_0, v0x7f77c40460_0, C4<1>, C4<1>;
-v0x7f77c40140_0 .net "Out", 0 0, L_0x7f77c841c0;  alias, 1 drivers
-v0x7f77c401e0_0 .net "in1", 0 0, v0x7f77c403c0_0;  1 drivers
-v0x7f77c40280_0 .net "in2", 0 0, v0x7f77c40460_0;  1 drivers
-    .scope S_0x7f77c5c180;
+L_0x6bc480 .functor AND 1, v0x6dd9d0_0, v0x6ddaa0_0, C4<1>, C4<1>;
+v0x6bd700_0 .net "Out", 0 0, L_0x6bc480;  alias, 1 drivers
+v0x6dd720_0 .net "in1", 0 0, v0x6dd9d0_0;  1 drivers
+v0x6dd7e0_0 .net "in2", 0 0, v0x6ddaa0_0;  1 drivers
+    .scope S_0x6bc810;
 T_0 ;
-    %vpi_call 2 23 "$monitor", "a=%b, b=%b, OUTPUT=%b", v0x7f77c403c0_0, v0x7f77c40460_0, v0x7f77c40320_0 {0 0 0};
+    %vpi_call 2 23 "$dumpfile", "AND2_Map.vcd" {0 0 0};
+    %vpi_call 2 24 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x6bc810 {0 0 0};
+    %vpi_call 2 25 "$monitor", "a=%b, b=%b, OUTPUT=%b", v0x6dd9d0_0, v0x6ddaa0_0, v0x6dd900_0 {0 0 0};
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v0x7f77c403c0_0, 0, 1;
+    %store/vec4 v0x6dd9d0_0, 0, 1;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v0x7f77c40460_0, 0, 1;
+    %store/vec4 v0x6ddaa0_0, 0, 1;
     %delay 100, 0;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v0x7f77c403c0_0, 0, 1;
+    %store/vec4 v0x6dd9d0_0, 0, 1;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v0x7f77c40460_0, 0, 1;
+    %store/vec4 v0x6ddaa0_0, 0, 1;
     %delay 100, 0;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v0x7f77c403c0_0, 0, 1;
+    %store/vec4 v0x6dd9d0_0, 0, 1;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v0x7f77c40460_0, 0, 1;
+    %store/vec4 v0x6ddaa0_0, 0, 1;
     %delay 100, 0;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v0x7f77c403c0_0, 0, 1;
+    %store/vec4 v0x6dd9d0_0, 0, 1;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v0x7f77c40460_0, 0, 1;
+    %store/vec4 v0x6ddaa0_0, 0, 1;
     %delay 100, 0;
-    %vpi_call 2 39 "$display", "Even if I can't Simulate, I can code and OPERATE!!!" {0 0 0};
-    %vpi_call 2 40 "$finish" {0 0 0};
+    %vpi_call 2 41 "$display", "Even if I can't Simulate, I can code and OPERATE!!!" {0 0 0};
+    %vpi_call 2 42 "$finish" {0 0 0};
     %end;
     .thread T_0;
 # The file index is used to find the file name in the following table.
 :file_names 4;
     "N/A";
     "<interactive>";
-    "AND_Test.v";
+    "AND2_Test.v";
     "./AND2.v";

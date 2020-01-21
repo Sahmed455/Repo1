@@ -1,25 +1,27 @@
 `timescale 10s/1s
 `include "AND2.v"
 
-module AND_Test;
+module AND2_Test;
 
 reg in1;
 reg in2;
 
 wire Out;
 
-AND2 iAND2(in1,in2,Out);
+//AND2 iAND2(in1,in2,Out);
 
-/*AND_Test uut(
+AND2 uut(
 	.in1(in1),
 	.in2(in2),
 	.Out(Out)
-);*/
+);
 
 
 
 initial
 begin
+	$dumpfile("AND2_Map.vcd");
+	$dumpvars(0,AND2_Test);
 	$monitor("a=%b, b=%b, OUTPUT=%b",in1,in2,Out);
 	in1=0;
 	in2=0;

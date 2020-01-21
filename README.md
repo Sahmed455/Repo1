@@ -7,4 +7,8 @@ Jan 12th, 2020 [11:40 AM]: SSH key is not working because system has gone throug
 			   This time push is done using HTTPS key.
 			   SSH key must be reallocated to its respective position.
 			   Terminal Used: TERMUX.
+Jan 21th, 2020 [1.02 PM]: #Successfully Created a Desktop Environment for my Ubuntu on Termux.
+			  #Initialized Git in Desktop Environment.
+			  #Cloned Repo1 from Termux to Ubuntu.
+			  #SSH-Key still not FIXED!
 end.
