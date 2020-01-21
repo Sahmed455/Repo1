@@ -1,0 +1,39 @@
+$date
+	Sat Jan 18 03:32:12 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ms
+$end
+$scope module HA_Test $end
+$var wire 1 ! Sum $end
+$var wire 1 " Carry $end
+$var reg 1 # in1 $end
+$var reg 1 $ in2 $end
+$scope module uut $end
+$var wire 1 # in1 $end
+$var wire 1 $ in2 $end
+$var wire 1 ! sum $end
+$var wire 1 " carry $end
+$scope module c $end
+$var wire 1 " Out $end
+$var wire 1 # in1 $end
+$var wire 1 $ in2 $end
+$upscope $end
+$scope module s $end
+$var wire 1 ! Out $end
+$var wire 1 # in1 $end
+$var wire 1 $ in2 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#4000
+$dumpvars
+1$
+1#
+1"
+0!
+$end
