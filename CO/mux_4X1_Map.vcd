@@ -1,5 +1,5 @@
 $date
-	Tue Jan 21 08:24:55 2020
+	Tue Jan 21 11:30:47 2020
 $end
 $version
 	Icarus Verilog
@@ -27,19 +27,19 @@ $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-b100 -
+b0 -
 b0 ,
 b11 +
-b1001 *
+b10 *
 b1 )
-b100 (
+b0 (
 b1 '
 b0 &
 b11 %
-b1001 $
+b10 $
 b1 #
-b100 "
-b100 !
+b0 "
+b0 !
 $end
 #100000
 b1 !
@@ -48,8 +48,8 @@ b1 &
 b1 ,
 b10 '
 #200000
-b1001 !
-b1001 -
+b10 !
+b10 -
 b10 &
 b10 ,
 b11 '
