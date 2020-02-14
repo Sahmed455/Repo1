@@ -1,0 +1,20 @@
+Running: D:\Xilinx_Setup_Data\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/user/Desktop/18CS8022/Sqeuential_Circuits/Sync_Test_isim_beh.exe -prj C:/Users/user/Desktop/18CS8022/Sqeuential_Circuits/Sync_Test_beh.prj work.Sync_Test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/user/Desktop/18CS8022/Sqeuential_Circuits/T_Flip_Flop.v" into library work
+Analyzing Verilog file "C:/Users/user/Desktop/18CS8022/Sqeuential_Circuits/Sync_Counter.v" into library work
+Analyzing Verilog file "C:/Users/user/Desktop/18CS8022/Sqeuential_Circuits/Sync_Test.v" into library work
+Analyzing Verilog file "D:/Xilinx_Setup_Data/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module T_Flip_Flop
+Compiling module Sync_Counter
+Compiling module Sync_Test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 4 Verilog Units
+Built simulation executable C:/Users/user/Desktop/18CS8022/Sqeuential_Circuits/Sync_Test_isim_beh.exe
+Fuse Memory Usage: 28340 KB
+Fuse CPU Usage: 592 ms

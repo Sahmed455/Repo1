@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/user/Desktop/18CS8022/Sqeuential_Circuits/Sync_Test_isim_beh.exe" -prj "C:/Users/user/Desktop/18CS8022/Sqeuential_Circuits/Sync_Test_beh.prj" "work.Sync_Test" "work.glbl" 

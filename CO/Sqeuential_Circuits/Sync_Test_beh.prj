@@ -1,0 +1,4 @@
+verilog work "T_Flip_Flop.v"
+verilog work "Sync_Counter.v"
+verilog work "Sync_Test.v"
+verilog work "D:/Xilinx_Setup_Data/14.7/ISE_DS/ISE//verilog/src/glbl.v"

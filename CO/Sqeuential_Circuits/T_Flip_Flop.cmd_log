@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/user/Desktop/18CS8022/Sqeuential_Circuits/T_Flip_Flop.xst" -ofn "C:/Users/user/Desktop/18CS8022/Sqeuential_Circuits/T_Flip_Flop.syr" 
